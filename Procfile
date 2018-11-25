@@ -1,1 +1,1 @@
-worker: node lp-helper.js
+worker: node lphelper.js
