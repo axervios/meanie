@@ -459,7 +459,7 @@ client.on("message", async message => {
       message.channel.send(`My command prefix has now been changed to **${args}**!`, { split: true })
       .then(function() {
         console.log(`My command prefix was changed to "${args}".`);
-        fs.writeFile("./config.json", `{ "prefix": "${args}", "token": "${config.token}", "currentactivity": "${config.currentactivity}", "activitytype": "${config.activitytype}", "creatorid": "${config.creatorid}"}`, err => {
+        fs.writeFile("./config.json", `{ "prefix": "${args}", "creatorid": "${config.creatorid}"}`, err => {
           if (err) throw err;
         });
       }).catch(err => {
@@ -729,7 +729,7 @@ client.on("message", async message => {
       let pmsg = await message.channel.send("Restarting...");
 
       client.destroy().then(function() {
-        client.login(config.token).then(token => {
+        client.login(process.env.BOT_TOKEN).then(token => {
           pmsg.edit("Successfully restarted!");
         });
       });
