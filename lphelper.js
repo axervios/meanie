@@ -11,7 +11,7 @@ const YTValidator = require("youtube-validator");
 const getYTID = require("get-youtube-id");
 
 // bot login
-client.login();
+client.login(); 
 
 // global default channel instantiation
 const defaultChannel = guild => {
