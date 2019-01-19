@@ -96,7 +96,6 @@ client.on("warn", e => console.warn(e));
 client.on("message", async message => {
     // make sure author isn't bot
     if (message.author.bot) return;
-    if (message.guild.id === "325490421419606016") return;
 
     // check for command messages outside of #bots in Level Palace
     // if (message.channel.type !== "dm" && message.channel.type !== "group" && message.guild.id === "325490421419606016" && !message.content.toLowerCase().startsWith("?mute") && !message.content.toLowerCase().startsWith("?unmute") && !message.content.toLowerCase().startsWith("?rank") && !message.content.toLowerCase().startsWith("!feed") && !message.content.toLowerCase().startsWith("-feed") && !message.content.toLowerCase().startsWith("~feed")) {
