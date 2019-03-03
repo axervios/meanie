@@ -7747,6 +7747,8 @@ client.on("emojiDelete", emoji => {
 
 // new user joining event
 client.on("guildMemberAdd", member => {
+  if (member.guild.id === "325490421419606016") return;
+	
   // check to see if there is an LP user by their name
   const channel = defaultChannel(member.guild);
   let memberNameEncoded = encodeURIComponent(member.displayName.trim());
@@ -7772,6 +7774,8 @@ client.on("guildMemberAdd", member => {
 
 // user leaving event
 client.on("guildMemberRemove", member => {
+  if (member.guild.id === "325490421419606016") return;
+	
   const channel = defaultChannel(member.guild);
   let memberTag = member.user.tag;
 
