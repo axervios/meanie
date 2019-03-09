@@ -34,7 +34,7 @@ function eachWordUpper(str) {
 }
 
 // global function for testing to see what is attached to a message, if anything
-function extension(attachment) {
+function extension(attachment) { 
   const imageLink = attachment.split('.');
   const typeOfImage = imageLink[imageLink.length - 1];
   const image = /(jpg|jpeg|png|gif)/gi.test(typeOfImage);
