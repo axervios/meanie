@@ -1449,7 +1449,7 @@ client.on("message", async message => {
           //     if (!isNaN(rmsg.content) && names[rmsg.content] && rmsg.author.id === message.author.id || rmsg.content.replace(/\s/g, "").toLowerCase() === "cancel" && rmsg.author.id === message.author.id) return true;
           //   }
 
-          //   message.channel.awaitMessages(filter, { max: 1, time: 15000, errors: ["time"] })
+          //   message.channel.awaitMessages(filter, { max: 1, time: 20000, errors: ["time"] })
           //     .then(collected => {
           //       // retrieve user information if input is not "cancel"
           //       if (collected.first().content !== "cancel") {
@@ -4255,7 +4255,7 @@ client.on("message", async message => {
                   if (!isNaN(rmsg.content) && levels[rmsg.content] && rmsg.author.id === message.author.id || rmsg.content.replace(/\s/g, "").toLowerCase() === "cancel" && rmsg.author.id === message.author.id) return true;
                 }
 
-                message.channel.awaitMessages(filter, { max: 1, time: 15000, errors: ["time"] })
+                message.channel.awaitMessages(filter, { max: 1, time: 20000, errors: ["time"] })
                 .then(collected => {
                   // retrieve user information if input is not "cancel"
                   if (collected.first().content !== "cancel") {
@@ -4495,7 +4495,7 @@ client.on("message", async message => {
                   if (!isNaN(rmsg.content) && levels[rmsg.content] && rmsg.author.id === message.author.id || rmsg.content.replace(/\s/g, "").toLowerCase() === "cancel" && rmsg.author.id === message.author.id) return true;
                 }
 
-                message.channel.awaitMessages(filter, { max: 1, time: 15000, errors: ["time"] })
+                message.channel.awaitMessages(filter, { max: 1, time: 20000, errors: ["time"] })
                 .then(collected => {
                   // retrieve user information if input is not "cancel"
                   if (collected.first().content !== "cancel") {
@@ -4735,7 +4735,7 @@ client.on("message", async message => {
                   if (!isNaN(rmsg.content) && levels[rmsg.content] && rmsg.author.id === message.author.id || rmsg.content.replace(/\s/g, "").toLowerCase() === "cancel" && rmsg.author.id === message.author.id) return true;
                 }
 
-                message.channel.awaitMessages(filter, { max: 1, time: 15000, errors: ["time"] })
+                message.channel.awaitMessages(filter, { max: 1, time: 20000, errors: ["time"] })
                 .then(collected => {
                   // retrieve user information if input is not "cancel"
                   if (collected.first().content !== "cancel") {
@@ -4975,7 +4975,7 @@ client.on("message", async message => {
                   if (!isNaN(rmsg.content) && levels[rmsg.content] && rmsg.author.id === message.author.id || rmsg.content.replace(/\s/g, "").toLowerCase() === "cancel" && rmsg.author.id === message.author.id) return true;
                 }
 
-                message.channel.awaitMessages(filter, { max: 1, time: 15000, errors: ["time"] })
+                message.channel.awaitMessages(filter, { max: 1, time: 20000, errors: ["time"] })
                 .then(collected => {
                   // retrieve user information if input is not "cancel"
                   if (collected.first().content !== "cancel") {
@@ -5215,7 +5215,7 @@ client.on("message", async message => {
                   if (!isNaN(rmsg.content) && levels[rmsg.content] && rmsg.author.id === message.author.id || rmsg.content.replace(/\s/g, "").toLowerCase() === "cancel" && rmsg.author.id === message.author.id) return true;
                 }
 
-                message.channel.awaitMessages(filter, { max: 1, time: 15000, errors: ["time"] })
+                message.channel.awaitMessages(filter, { max: 1, time: 20000, errors: ["time"] })
                 .then(collected => {
                   // retrieve user information if input is not "cancel"
                   if (collected.first().content !== "cancel") {
@@ -5455,7 +5455,7 @@ client.on("message", async message => {
                   if (!isNaN(rmsg.content) && levels[rmsg.content] && rmsg.author.id === message.author.id || rmsg.content.replace(/\s/g, "").toLowerCase() === "cancel" && rmsg.author.id === message.author.id) return true;
                 }
 
-                message.channel.awaitMessages(filter, { max: 1, time: 15000, errors: ["time"] })
+                message.channel.awaitMessages(filter, { max: 1, time: 20000, errors: ["time"] })
                 .then(collected => {
                   // retrieve user information if input is not "cancel"
                   if (collected.first().content !== "cancel") {
@@ -5695,7 +5695,7 @@ client.on("message", async message => {
                   if (!isNaN(rmsg.content) && levels[rmsg.content] && rmsg.author.id === message.author.id || rmsg.content.replace(/\s/g, "").toLowerCase() === "cancel" && rmsg.author.id === message.author.id) return true;
                 }
 
-                message.channel.awaitMessages(filter, { max: 1, time: 15000, errors: ["time"] })
+                message.channel.awaitMessages(filter, { max: 1, time: 20000, errors: ["time"] })
                 .then(collected => {
                   // retrieve user information if input is not "cancel"
                   if (collected.first().content !== "cancel") {
@@ -5935,7 +5935,7 @@ client.on("message", async message => {
                   if (!isNaN(rmsg.content) && levels[rmsg.content] && rmsg.author.id === message.author.id || rmsg.content.replace(/\s/g, "").toLowerCase() === "cancel" && rmsg.author.id === message.author.id) return true;
                 }
 
-                message.channel.awaitMessages(filter, { max: 1, time: 15000, errors: ["time"] })
+                message.channel.awaitMessages(filter, { max: 1, time: 20000, errors: ["time"] })
                 .then(collected => {
                   // retrieve user information if input is not "cancel"
                   if (collected.first().content !== "cancel") {
@@ -6175,7 +6175,7 @@ client.on("message", async message => {
                   if (!isNaN(rmsg.content) && levels[rmsg.content] && rmsg.author.id === message.author.id || rmsg.content.replace(/\s/g, "").toLowerCase() === "cancel" && rmsg.author.id === message.author.id) return true;
                 }
 
-                message.channel.awaitMessages(filter, { max: 1, time: 15000, errors: ["time"] })
+                message.channel.awaitMessages(filter, { max: 1, time: 20000, errors: ["time"] })
                 .then(collected => {
                   // retrieve user information if input is not "cancel"
                   if (collected.first().content !== "cancel") {
