@@ -30,7 +30,7 @@ function eachWordUpper(str) {
       newarray.push(array[x].charAt(0).toUpperCase() + array[x].slice(1));
   }
 
-  return newarray.join(" ");
+  return newarray.join(" "); 
 }
 
 // global function for testing to see what is attached to a message, if anything
