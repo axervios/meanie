@@ -31,7 +31,7 @@ function eachWordUpper(str) {
   }
 
   return newarray.join(" "); 
-}
+} 
 
 // global function for testing to see what is attached to a message, if anything
 function extension(attachment) { 
