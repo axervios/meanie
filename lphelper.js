@@ -11,7 +11,7 @@ const YTValidator = require("youtube-validator");
 const getYTID = require("get-youtube-id");
 
 // bot login
-client.login(); 
+client.login();
 
 // global default channel instantiation
 const defaultChannel = guild => {
@@ -987,12 +987,12 @@ client.on("message", async message => {
                           },
                           {
                             name: "Status",
-                            value: userinfo[8],
+                            value: userinfo[7],
                             inline: true
                           },
                           {
                             name: "User ID",
-                            value: userinfo[15],
+                            value: userinfo[14],
                             inline: true
                           },
                           {
@@ -1027,7 +1027,7 @@ client.on("message", async message => {
                           },
                           {
                             name: "Links to Profile",
-                            value: `<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>\n<https://www.levelpalace.com/profile?user_id=${userinfo[15]}>`,
+                            value: `<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>\n<https://www.levelpalace.com/profile?user_id=${userinfo[14]}>`,
                             inline: true
                           }
                         ]
@@ -1052,12 +1052,12 @@ client.on("message", async message => {
                           },
                           {
                             name: "Status",
-                            value: userinfo[8],
+                            value: userinfo[7],
                             inline: true
                           },
                           {
                             name: "User ID",
-                            value: userinfo[15],
+                            value: userinfo[14],
                             inline: true
                           },
                           {
@@ -1092,7 +1092,7 @@ client.on("message", async message => {
                           },
                           {
                             name: "Links to Profile",
-                            value: `<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>\n<https://www.levelpalace.com/profile?user_id=${userinfo[15]}>`,
+                            value: `<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>\n<https://www.levelpalace.com/profile?user_id=${userinfo[14]}>`,
                             inline: true
                           }
                         ]
@@ -1119,12 +1119,12 @@ client.on("message", async message => {
                           },
                           {
                             name: "Status",
-                            value: userinfo[8],
+                            value: userinfo[7],
                             inline: true
                           },
                           {
                             name: "User ID",
-                            value: userinfo[15],
+                            value: userinfo[14],
                             inline: true
                           },
                           {
@@ -1159,7 +1159,7 @@ client.on("message", async message => {
                           },
                           {
                             name: "Links to Profile",
-                            value: `<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>\n<https://www.levelpalace.com/profile?user_id=${userinfo[15]}>`,
+                            value: `<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>\n<https://www.levelpalace.com/profile?user_id=${userinfo[14]}>`,
                             inline: true
                           }
                         ]
@@ -1184,12 +1184,12 @@ client.on("message", async message => {
                           },
                           {
                             name: "Status",
-                            value: userinfo[8],
+                            value: userinfo[7],
                             inline: true
                           },
                           {
                             name: "User ID",
-                            value: userinfo[15],
+                            value: userinfo[14],
                             inline: true
                           },
                           {
@@ -1224,7 +1224,7 @@ client.on("message", async message => {
                           },
                           {
                             name: "Links to Profile",
-                            value: `<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>\n<https://www.levelpalace.com/profile?user_id=${userinfo[15]}>`,
+                            value: `<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>\n<https://www.levelpalace.com/profile?user_id=${userinfo[14]}>`,
                             inline: true
                           }
                         ]
@@ -1251,12 +1251,12 @@ client.on("message", async message => {
                           },
                           {
                             name: "Status",
-                            value: userinfo[8],
+                            value: userinfo[7],
                             inline: true
                           },
                           {
                             name: "User ID",
-                            value: userinfo[15],
+                            value: userinfo[14],
                             inline: true
                           },
                           {
@@ -1291,7 +1291,7 @@ client.on("message", async message => {
                           },
                           {
                             name: "Links to Profile",
-                            value: `<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>\n<https://www.levelpalace.com/profile?user_id=${userinfo[15]}>`,
+                            value: `<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>\n<https://www.levelpalace.com/profile?user_id=${userinfo[14]}>`,
                             inline: true
                           }
                         ]
@@ -1316,12 +1316,12 @@ client.on("message", async message => {
                           },
                           {
                             name: "Status",
-                            value: userinfo[8],
+                            value: userinfo[7],
                             inline: true
                           },
                           {
                             name: "User ID",
-                            value: userinfo[15],
+                            value: userinfo[14],
                             inline: true
                           },
                           {
@@ -1356,7 +1356,7 @@ client.on("message", async message => {
                           },
                           {
                             name: "Links to Profile",
-                            value: `<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>\n<https://www.levelpalace.com/profile?user_id=${userinfo[15]}>`,
+                            value: `<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>\n<https://www.levelpalace.com/profile?user_id=${userinfo[14]}>`,
                             inline: true
                           }
                         ]
@@ -1957,12 +1957,12 @@ client.on("message", async message => {
                     },
                     {
                       name: "Status",
-                      value: userinfo[8],
+                      value: userinfo[7],
                       inline: true
                     },
                     {
                       name: "User ID",
-                      value: userinfo[15],
+                      value: userinfo[14],
                       inline: true
                     },
                     {
@@ -1997,7 +1997,7 @@ client.on("message", async message => {
                     },
                     {
                       name: "Links to Profile",
-                      value: `<https://www.levelpalace.com/profile?user_id=${userinfo[15]}>\n<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>`,
+                      value: `<https://www.levelpalace.com/profile?user_id=${userinfo[14]}>\n<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>`,
                       inline: true
                     }
                   ]
@@ -2022,12 +2022,12 @@ client.on("message", async message => {
                     },
                     {
                       name: "Status",
-                      value: userinfo[8],
+                      value: userinfo[7],
                       inline: true
                     },
                     {
                       name: "User ID",
-                      value: userinfo[15],
+                      value: userinfo[14],
                       inline: true
                     },
                     {
@@ -2062,7 +2062,7 @@ client.on("message", async message => {
                     },
                     {
                       name: "Links to Profile",
-                      value: `<https://www.levelpalace.com/profile?user_id=${userinfo[15]}>\n<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>`,
+                      value: `<https://www.levelpalace.com/profile?user_id=${userinfo[14]}>\n<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>`,
                       inline: true
                     }
                   ]
@@ -2089,12 +2089,12 @@ client.on("message", async message => {
                     },
                     {
                       name: "Status",
-                      value: userinfo[8],
+                      value: userinfo[7],
                       inline: true
                     },
                     {
                       name: "User ID",
-                      value: userinfo[15],
+                      value: userinfo[14],
                       inline: true
                     },
                     {
@@ -2129,7 +2129,7 @@ client.on("message", async message => {
                     },
                     {
                       name: "Links to Profile",
-                      value: `<https://www.levelpalace.com/profile?user_id=${userinfo[15]}>\n<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>`,
+                      value: `<https://www.levelpalace.com/profile?user_id=${userinfo[14]}>\n<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>`,
                       inline: true
                     }
                   ]
@@ -2154,12 +2154,12 @@ client.on("message", async message => {
                     },
                     {
                       name: "Status",
-                      value: userinfo[8],
+                      value: userinfo[7],
                       inline: true
                     },
                     {
                       name: "User ID",
-                      value: userinfo[15],
+                      value: userinfo[14],
                       inline: true
                     },
                     {
@@ -2194,7 +2194,7 @@ client.on("message", async message => {
                     },
                     {
                       name: "Links to Profile",
-                      value: `<https://www.levelpalace.com/profile?user_id=${userinfo[15]}>\n<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>`,
+                      value: `<https://www.levelpalace.com/profile?user_id=${userinfo[14]}>\n<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>`,
                       inline: true
                     }
                   ]
@@ -2221,12 +2221,12 @@ client.on("message", async message => {
                     },
                     {
                       name: "Status",
-                      value: userinfo[8],
+                      value: userinfo[7],
                       inline: true
                     },
                     {
                       name: "User ID",
-                      value: userinfo[15],
+                      value: userinfo[14],
                       inline: true
                     },
                     {
@@ -2261,7 +2261,7 @@ client.on("message", async message => {
                     },
                     {
                       name: "Links to Profile",
-                      value: `<https://www.levelpalace.com/profile?user_id=${userinfo[15]}>\n<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>`,
+                      value: `<https://www.levelpalace.com/profile?user_id=${userinfo[14]}>\n<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>`,
                       inline: true
                     }
                   ]
@@ -2286,12 +2286,12 @@ client.on("message", async message => {
                     },
                     {
                       name: "Status",
-                      value: userinfo[8],
+                      value: userinfo[7],
                       inline: true
                     },
                     {
                       name: "User ID",
-                      value: userinfo[15],
+                      value: userinfo[14],
                       inline: true
                     },
                     {
@@ -2326,7 +2326,7 @@ client.on("message", async message => {
                     },
                     {
                       name: "Links to Profile",
-                      value: `<https://www.levelpalace.com/profile?user_id=${userinfo[15]}>\n<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>`,
+                      value: `<https://www.levelpalace.com/profile?user_id=${userinfo[14]}>\n<https://www.levelpalace.com/profile?user=${encodeURIComponent(userinfo[0])}>`,
                       inline: true
                     }
                   ]
