@@ -8035,4 +8035,4 @@ client.on("messageReactionRemove", async (reaction, user) => {
       return starMsg.delete();
     }
   }
-});
+}); 
