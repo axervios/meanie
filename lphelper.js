@@ -7906,7 +7906,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     }).catch(err => {
       console.error(`An error occurred while trying to fetch users that sent a certain reaction:\n${err}`);
     });
-  } else if (reaction.emoji.name === '🌟') {
+  } else if (reaction.emoji.name === '🌟' || reaction.emoji.name === "<:goldogre:571797847578509323>") {
     // constant declarations
     const message = reaction.message;
     const starChannel = client.channels.find(c => c.id === "468472403199000576");
@@ -8013,7 +8013,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
       // code to delete starboarded messages that get below 5 star reactions again
       if (parseInt(star[1]) - 1 <= 4) return starMsg.delete();
     }
-  } else if (reaction.emoji.name === '🌟') {
+  } else if (reaction.emoji.name === '🌟' || reaction.emoji.name === "<:goldogre:571797847578509323>") {
     // constant declarations
     const message = reaction.message;
     const starChannel = client.channels.find(c => c.id === "468472403199000576");
