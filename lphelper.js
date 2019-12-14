@@ -7927,6 +7927,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
       // stop execution if there are now too few star reactions
       if (validUsers.size < 2) return;
 
+      // check to see if the message is already in the starboard or not
       if (!stars) {
         const image = message.attachments.size > 0 ? await extension(message.attachments.array()[0].url) : '';
           if (image === '' && message.cleanContent.length < 1) return;
