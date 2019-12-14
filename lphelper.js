@@ -7919,7 +7919,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (message.channel.id === "326576626097979402" || message.channel.id === "325496108467879956" || message.channel.id === "357386246793723905" || message.channel.id === "414852683292213253" || message.channel.id === "468472403199000576" || message.channel.id === "456626411910856706" || message.channel.id === "456626483654557698" || message.channel.id === "455993305067683840" || message.channel.id === "454493943426449408" || message.channel.id === "399778380398198784" || message.channel.id === "392421139089063937" || message.channel.id === "325495534896807936" || message.channel.id === "325495670502850560" || message.channel.id === "334144051706331136" || message.channel.id === "330810124757368832") return;
     if (!message.guild.members.find(u => u.id === user.id).hasPermission("MANAGE_MESSAGES")) return;
     if (user.bot) return;
-	 
+
     // check how many staff members remain before attempting to starboard
     reaction.fetchUsers().then(async users => {
       let validUsers = users.filter(user => message.guild.members.find(u => u.id === user.id).hasPermission("MANAGE_MESSAGES") && !user.bot);
