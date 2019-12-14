@@ -7926,38 +7926,38 @@ client.on("messageReactionAdd", async (reaction, user) => {
 
       // stop execution if there are now too few star reactions
       if (validUsers.size < 2) return;
+
+      if (!stars) {
+        const image = message.attachments.size > 0 ? await extension(message.attachments.array()[0].url) : '';
+          if (image === '' && message.cleanContent.length < 1) return;
+
+          await starChannel.send({ embed: {
+            color: 0xfdaa30,
+            description: message.cleanContent,
+            author: {
+              name: message.author.tag + ` in #${message.channel.name} (Starboarded by ${user.tag})`,
+              url: message.url,
+              icon_url: message.author.displayAvatarURL
+            },
+            timestamp: new Date(),
+            footer: {
+              text: `⭐ ❌ | ${message.id}`
+            },
+            image: {
+              url: image
+            }
+          }});
+          //   .setColor(0xfdaa30)
+          //   .setDescription(message.cleanContent)
+          //   .setAuthor(message.author.tag, message.author.displayAvatarURL)
+          //   .setTimestamp(new Date())
+          //   .setFooter(`⭐ ❌ | ${message.id}`)
+          //   .setImage(image);
+          // await starChannel.send({ embed });
+      }
     }).catch(err => {
       console.error(`An error occurred while trying to fetch users that sent a certain reaction:\n${err}`);
     });
-
-    if (!stars) {
-      const image = message.attachments.size > 0 ? await extension(message.attachments.array()[0].url) : '';
-        if (image === '' && message.cleanContent.length < 1) return;
-
-        await starChannel.send({ embed: {
-          color: 0xfdaa30,
-          description: message.cleanContent,
-          author: {
-            name: message.author.tag + ` in #${message.channel.name} (Starboarded by ${user.tag})`,
-            url: message.url,
-            icon_url: message.author.displayAvatarURL
-          },
-          timestamp: new Date(),
-          footer: {
-            text: `⭐ ❌ | ${message.id}`
-          },
-          image: {
-            url: image
-          }
-        }});
-        //   .setColor(0xfdaa30)
-        //   .setDescription(message.cleanContent)
-        //   .setAuthor(message.author.tag, message.author.displayAvatarURL)
-        //   .setTimestamp(new Date())
-        //   .setFooter(`⭐ ❌ | ${message.id}`)
-        //   .setImage(image);
-        // await starChannel.send({ embed });
-    }
   }
 });
 
