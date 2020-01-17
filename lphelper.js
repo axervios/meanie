@@ -7925,7 +7925,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
       let validUsers = users.filter(user => message.guild.members.find(u => u.id === user.id).hasPermission("MANAGE_MESSAGES") && !user.bot);
 
       // stop execution if there are now too few star reactions
-      if (validUsers.size < 2) return;
+      if (validUsers.size < 3) return;
 
       // check to see if the message is already in the starboard or not
       if (!stars) {
