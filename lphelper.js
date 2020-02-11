@@ -762,7 +762,7 @@ client.on("message", async message => {
     }
 
     else if (command === "say") {
-      if (args === "You are not allowed to use this command!" && message.author.id !== config.creatorid || args === "You are not allowed to use this command here!" && message.author.id !== config.creatorid) return message.channel.send("Stop trying to be funny, even MB has a better sense of humor than you.");
+      if (args === "You are not allowed to use this command!" && message.author.id !== config.creatorid || args === "You are not allowed to use this command here!" && message.author.id !== config.creatorid || args === "You are not aIIowed to use this command here!" && message.author.id !== config.creatorid) return message.channel.send("Stop trying to be funny, even MB has a better sense of humor than you.");
       if (message.author.id !== config.creatorid && message.guild && message.guild.id === "325490421419606016") {
         let denymsg = await message.channel.send("You are not allowed to use this command here!");
         return denymsg.delete(5000);
