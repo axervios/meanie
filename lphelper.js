@@ -7745,43 +7745,43 @@ client.on("emojiDelete", emoji => {
   channel.send(`The emoji **${emoji.name}** has been deleted!`, { split: true });
 });
 
-// new user joining event
-client.on("guildMemberAdd", member => {
-  if (member.guild.id === "325490421419606016") return;
+// // new user joining event
+// client.on("guildMemberAdd", member => {
+//   if (member.guild.id === "325490421419606016") return;
 	
-  // check to see if there is an LP user by their name
-  const channel = defaultChannel(member.guild);
-  let memberNameEncoded = encodeURIComponent(member.displayName.trim());
-  let memberTag = member.user.tag;
+//   // check to see if there is an LP user by their name
+//   const channel = defaultChannel(member.guild);
+//   let memberNameEncoded = encodeURIComponent(member.displayName.trim());
+//   let memberTag = member.user.tag;
 
-  request({ uri: `https://www.levelpalace.com/profile?user=${memberNameEncoded}`, timeout: 10000, headers: { "User-Agent": "lp-helper" } }, function(err, resp, body) {
-    if (!err && resp.statusCode === 200) {
-      let $ = cheerio.load(body);
+//   request({ uri: `https://www.levelpalace.com/profile?user=${memberNameEncoded}`, timeout: 10000, headers: { "User-Agent": "lp-helper" } }, function(err, resp, body) {
+//     if (!err && resp.statusCode === 200) {
+//       let $ = cheerio.load(body);
 
-      if ($("div.page-banner").length > 0) {
-        console.log(`A user that just joined ${member.guild.name}, with the account ${memberTag}, was found to be an LP user.`);
-        channel.send(`**${memberTag}** has just joined the server, and was found to be an LP user! Here's the link to their profile:\nhttps://www.levelpalace.com/profile?user=${memberNameEncoded}`);
-      } else {
-        console.log(`A user that just joined ${member.guild.name}, with the account ${memberTag}, was not found to be an LP user.`);
-        channel.send(`**${memberTag}** has just joined the server, and was not found to be an LP user.`);
-      }
-    } else {
-      console.error(`I encountered an error while trying to determine whether or not a user that just joined ${member.guild.name}, with the account ${memberTag}, was an LP user.`);
-      channel.send(`**${memberTag}** has just joined the server, however I have encountered an error while trying to determine whether or not they are an LP user.`);
-    }
-  });
-});
+//       if ($("div.page-banner").length > 0) {
+//         console.log(`A user that just joined ${member.guild.name}, with the account ${memberTag}, was found to be an LP user.`);
+//         channel.send(`**${memberTag}** has just joined the server, and was found to be an LP user! Here's the link to their profile:\nhttps://www.levelpalace.com/profile?user=${memberNameEncoded}`);
+//       } else {
+//         console.log(`A user that just joined ${member.guild.name}, with the account ${memberTag}, was not found to be an LP user.`);
+//         channel.send(`**${memberTag}** has just joined the server, and was not found to be an LP user.`);
+//       }
+//     } else {
+//       console.error(`I encountered an error while trying to determine whether or not a user that just joined ${member.guild.name}, with the account ${memberTag}, was an LP user.`);
+//       channel.send(`**${memberTag}** has just joined the server, however I have encountered an error while trying to determine whether or not they are an LP user.`);
+//     }
+//   });
+// });
 
-// user leaving event
-client.on("guildMemberRemove", member => {
-  if (member.guild.id === "325490421419606016") return;
+// // user leaving event
+// client.on("guildMemberRemove", member => {
+//   if (member.guild.id === "325490421419606016") return;
 	
-  const channel = defaultChannel(member.guild);
-  let memberTag = member.user.tag;
+//   const channel = defaultChannel(member.guild);
+//   let memberTag = member.user.tag;
 
-  console.log(`A user with the account ${memberTag}, has just left ${member.guild.name}.`);
-  channel.send(`**${memberTag}** has just left the server!`);
-});
+//   console.log(`A user with the account ${memberTag}, has just left ${member.guild.name}.`);
+//   channel.send(`**${memberTag}** has just left the server!`);
+// });
 
 // user update event
 client.on("userUpdate", (oldUser, newUser) => {
