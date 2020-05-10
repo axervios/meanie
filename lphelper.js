@@ -7826,15 +7826,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
   if (reaction.emoji.name === '⭐') {
     // constant declarations
     const message = reaction.message;
-    const starChannel;
-	  
-    // determine starboard channel
-    if (message.channel.id === "325490421419606016") {
-       starChannel = client.channels.find(c => c.id === "708101799109722193");
-    } else {
-       starChannel = client.channels.find(c => c.id === "468472403199000576");
-    }
-	  
+    const starChannel = client.channels.find(c => c.id === "468472403199000576");  
     const fetchedMessages = await starChannel.fetchMessages({ limit: 100 });
     const stars = fetchedMessages.find(m => m.embeds[0] && m.embeds[0].footer.text.startsWith('⭐') && m.embeds[0].footer.text.endsWith(message.id));
 
@@ -7975,15 +7967,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
   if (reaction.emoji.name === '⭐') {
     // constant declarations
     const message = reaction.message;
-    const starChannel;
-    	  
-    // determine starboard channel
-    if (message.channel.id === "325490421419606016") {
-       starChannel = client.channels.find(c => c.id === "708101799109722193");
-    } else {
-       starChannel = client.channels.find(c => c.id === "468472403199000576");
-    }
-	
+    const starChannel = client.channels.find(c => c.id === "468472403199000576");
     const fetchedMessages = await starChannel.fetchMessages({ limit: 100 });
     const stars = fetchedMessages.find(m => m.embeds[0] && m.embeds[0].footer.text.startsWith('⭐') && m.embeds[0].footer.text.endsWith(message.id));
 
