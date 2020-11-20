@@ -1,0 +1,2 @@
+nodemon meanie.js
+PAUSE
